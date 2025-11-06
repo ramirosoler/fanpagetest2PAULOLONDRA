@@ -1,125 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paulo Londra | Biografía</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paulo Londra | Biografía</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Fuente Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Fuente Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Estilos externos -->
-  <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body class="bg-gray-50 text-gray-800 font-sans">
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- 🔝 NAV -->
+    <header
+      class="bg-[#00b4d8] text-white py-4 shadow-md sticky top-0 z-50 backdrop-blur-sm bg-opacity-90"
+    >
+      <nav class="max-w-6xl mx-auto flex justify-between items-center px-6">
+        <h1
+          class="text-2xl font-bold tracking-wide cursor-pointer transition-transform duration-300 hover:scale-105"
+        >
+          PAULO LONDRA
+        </h1>
+        <ul class="flex space-x-6 text-lg">
+          <li>
+            <a href="index.html" class="hover:text-cyan-200 transition-colors"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a
+              href="discografia.html"
+              class="hover:text-cyan-200 transition-colors"
+              >Discografía</a
+            >
+          </li>
+          <li>
+            <a
+              href="biografia.html"
+              class="hover:text-cyan-200 transition-colors"
+              >Biografía</a
+            >
+          </li>
+          <li>
+            <a href="galeria.html" class="hover:text-cyan-200 transition-colors"
+              >Galería</a
+            >
+          </li>
+          <li>
+            <a
+              href="contacto.html"
+              class="hover:text-cyan-200 transition-colors"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- 🔝 NAV -->
-  <header class="bg-[#00b4d8] text-white py-4 shadow-md sticky top-0 z-50 backdrop-blur-sm bg-opacity-90">
-    <nav class="max-w-6xl mx-auto flex justify-between items-center px-6">
-      <h1 class="text-2xl font-bold tracking-wide cursor-pointer transition-transform duration-300 hover:scale-105">
-        PAULO LONDRA
-      </h1>
-      <ul class="flex space-x-6 text-lg">
-        <li><a href="index.html" class="hover:text-cyan-200 transition-colors">Inicio</a></li>
-        <li><a href="discografia.html" class="hover:text-cyan-200 transition-colors">Discografía</a></li>
-        <li><a href="biografia.html" class="hover:text-cyan-200 transition-colors">Biografía</a></li>
-        <li><a href="galeria.html" class="hover:text-cyan-200 transition-colors">Galería</a></li>
-        <li><a href="contacto.html" class="hover:text-cyan-200 transition-colors">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- INTRO -->
+    <section
+      class="text-center py-20 bg-gradient-to-b from-white to-cyan-50 animate-fadeIn"
+    >
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        La historia de Paulo Londra
+      </h2>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-6">
+        Desde Córdoba, Argentina, hasta conquistar escenarios internacionales.
+        Conoce su trayectoria, premios y logros que lo han llevado a ser un
+        ícono del género urbano.
+      </p>
+    </section>
 
-  <!-- INTRO -->
-  <section class="text-center py-20 bg-gradient-to-b from-white to-cyan-50 animate-fadeIn">
-    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">La historia de Paulo Londra</h2>
-    <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-6">
-      Desde Córdoba, Argentina, hasta conquistar escenarios internacionales. Conoce su trayectoria, premios y logros que lo han llevado a ser un ícono del género urbano.
-    </p>
-  </section>
+    <!-- BIOGRAFÍA -->
+    <section
+      class="max-w-6xl mx-auto px-6 py-16 bg-white rounded-xl shadow-md animate-fadeIn"
+    >
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <img
+          src="./img/COSTARICA.avif"
+          alt="Paulo Londra"
+          class="w-72 rounded-xl shadow-lg"
+        />
+        <article class="space-y-4">
+          <h3 class="text-3xl font-bold text-[#00b4d8]">
+            Desde Córdoba para el mundo
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Nacido en 1998, Paulo Londra comenzó improvisando en las plazas de
+            Córdoba (Argentina). Su talento y carisma lo llevaron a destacarse
+            en las competencias de freestyle, especialmente en “El Quinto
+            Escalón”.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            En 2017 y 2018, Paulo empezó a publicar sus primeras canciones en
+            YouTube y Spotify. Temas como <strong>“Relax”</strong> y
+            <strong>“Nena Maldición”</strong> captaron la atención del público
+            joven y de productores importantes. Su estilo combina trap, pop y
+            reggaetón manteniendo un mensaje positivo y auténtico.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Tras su primer álbum <strong>“Homerun” (2019)</strong>, alcanzó
+            reconocimiento internacional, colaborando con artistas como Ed
+            Sheeran, Becky G y Feid. Su música ha sido aplaudida por su lírica,
+            flow y capacidad de conectar con millones de oyentes en todo el
+            mundo.
+          </p>
+        </article>
+      </div>
+    </section>
 
-  <!-- BIOGRAFÍA -->
-  <section class="max-w-6xl mx-auto px-6 py-16 bg-white rounded-xl shadow-md animate-fadeIn">
-    <div class="flex flex-col md:flex-row gap-10 items-center">
-      <img src="/img/COSTARICA.avif" alt="Paulo Londra" class="w-72 rounded-xl shadow-lg">
-      <article class="space-y-4">
-        <h3 class="text-3xl font-bold text-[#00b4d8]">Desde Córdoba para el mundo</h3>
-        <p class="text-gray-600 leading-relaxed">
-          Nacido en 1998, Paulo Londra comenzó improvisando en las plazas de Córdoba (Argentina). Su talento y carisma lo llevaron a destacarse en las competencias de freestyle, especialmente en “El Quinto Escalón”.
+    <!-- TIMELINE DE PREMIOS Y LOGROS -->
+    <section class="max-w-6xl mx-auto px-6 py-16 mt-10">
+      <h3 class="text-3xl font-semibold text-[#00b4d8] mb-8 text-center">
+        🏆 Línea de tiempo de premios y logros
+      </h3>
+      <div class="relative border-l-2 border-cyan-200 ml-6 space-y-10">
+        <!-- HITO 2018 -->
+        <div class="relative">
+          <div
+            class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-3 top-1"
+          ></div>
+          <p class="font-semibold text-gray-800">
+            2018 - Primeros hits virales
+          </p>
+          <p class="text-gray-600">
+            Canciones como “Relax” y “Nena Maldición” lo dieron a conocer en
+            YouTube y Spotify.
+          </p>
+          <img
+            src="./img/ALBUNVIRAL.jpeg"
+            alt="Premio 2018"
+            class="mt-2 w-48 rounded-xl shadow-md"
+          />
+        </div>
+
+        <!-- HITO 2019 -->
+        <div class="relative">
+          <div
+            class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-3 top-1"
+          ></div>
+          <p class="font-semibold text-gray-800">
+            2019 - Álbum Homerun & Premios
+          </p>
+          <p class="text-gray-600">
+            Lanzamiento de su primer álbum “Homerun” y premio Heat Latin Music
+            Awards al Mejor Artista Nuevo.
+          </p>
+          <img
+            src="./img/premios-mtv-miaw-2019-paulo-londra-se-quedo-el-hit-del-ano.webp"
+            alt="Premio 2019"
+            class="mt-2 w-48 rounded-xl shadow-md"
+          />
+        </div>
+
+        <!-- HITO 2022 -->
+        <div class="relative">
+          <div
+            class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-3 top-1"
+          ></div>
+          <p class="font-semibold text-gray-800">2022 - Regreso triunfal</p>
+          <p class="text-gray-600">
+            Lanzamiento de “Back to the Game” y colaboraciones con Ed Sheeran,
+            Becky G y Feid.
+          </p>
+          <img
+            src="./img/feid.jpeg"
+            alt="Premio 2022"
+            class="mt-2 w-48 rounded-xl shadow-md"
+          />
+        </div>
+
+        <!-- HITO 2025 -->
+        <div class="relative">
+          <div
+            class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-3 top-1"
+          ></div>
+          <p class="font-semibold text-gray-800">2025 - Nuevo proyecto</p>
+          <p class="text-gray-600">
+            Próximamente un nuevo álbum que promete consolidar su carrera
+            internacional.
+          </p>
+          <img
+            src="./img/lazamientos.webp"
+            alt="Premio 2025"
+            class="mt-2 w-48 rounded-xl shadow-md"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p>© 2025 Fanpage de Paulo Londra</p>
+        <p>
+          Desarrollado por
+          <span class="text-cyan-400 font-semibold">Ramiro Soler</span>
         </p>
-        <p class="text-gray-600 leading-relaxed">
-          En 2017 y 2018, Paulo empezó a publicar sus primeras canciones en YouTube y Spotify. Temas como <strong>“Relax”</strong> y <strong>“Nena Maldición”</strong> captaron la atención del público joven y de productores importantes. Su estilo combina trap, pop y reggaetón manteniendo un mensaje positivo y auténtico.
-        </p>
-        <p class="text-gray-600 leading-relaxed">
-          Tras su primer álbum <strong>“Homerun” (2019)</strong>, alcanzó reconocimiento internacional, colaborando con artistas como Ed Sheeran, Becky G y Feid. Su música ha sido aplaudida por su lírica, flow y capacidad de conectar con millones de oyentes en todo el mundo.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <!-- TIMELINE DE PREMIOS Y LOGROS -->
-  <section class="max-w-6xl mx-auto px-6 py-16 mt-10">
-    <h3 class="text-3xl font-semibold text-[#00b4d8] mb-8 text-center">🏆 Línea de tiempo de premios y logros</h3>
-    <div class="relative border-l-2 border-cyan-200 ml-6 space-y-10">
-      
-      <!-- HITO 2018 -->
-      <div class="relative">
-        <div class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-3 top-1"></div>
-        <p class="font-semibold text-gray-800">2018 - Primeros hits virales</p>
-        <p class="text-gray-600">Canciones como “Relax” y “Nena Maldición” lo dieron a conocer en YouTube y Spotify.</p>
-        <img src="/img/ALBUNVIRAL.jpeg" alt="Premio 2018" class="mt-2 w-48 rounded-xl shadow-md">
+        <div class="flex gap-4 mt-2 md:mt-0">
+          <a href="#" class="hover:text-cyan-300 transition-colors"
+            >Instagram</a
+          >
+          <a href="#" class="hover:text-cyan-300 transition-colors">Twitter</a>
+          <a href="#" class="hover:text-cyan-300 transition-colors">Facebook</a>
+        </div>
       </div>
+    </footer>
 
-      <!-- HITO 2019 -->
-      <div class="relative">
-        <div class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-3 top-1"></div>
-        <p class="font-semibold text-gray-800">2019 - Álbum Homerun & Premios</p>
-        <p class="text-gray-600">Lanzamiento de su primer álbum “Homerun” y premio Heat Latin Music Awards al Mejor Artista Nuevo.</p>
-        <img src="/img/premios-mtv-miaw-2019-paulo-londra-se-quedo-el-hit-del-ano.webp" alt="Premio 2019" class="mt-2 w-48 rounded-xl shadow-md">
-      </div>
-
-      <!-- HITO 2022 -->
-      <div class="relative">
-        <div class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-3 top-1"></div>
-        <p class="font-semibold text-gray-800">2022 - Regreso triunfal</p>
-        <p class="text-gray-600">Lanzamiento de “Back to the Game” y colaboraciones con Ed Sheeran, Becky G y Feid.</p>
-        <img src="/img/feid.jpeg" alt="Premio 2022" class="mt-2 w-48 rounded-xl shadow-md">
-      </div>
-
-      <!-- HITO 2025 -->
-      <div class="relative">
-        <div class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-3 top-1"></div>
-        <p class="font-semibold text-gray-800">2025 - Nuevo proyecto</p>
-        <p class="text-gray-600">Próximamente un nuevo álbum que promete consolidar su carrera internacional.</p>
-        <img src="/img/lazamientos.webp" alt="Premio 2025" class="mt-2 w-48 rounded-xl shadow-md">
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p>© 2025 Fanpage de Paulo Londra</p>
-      <p>Desarrollado por <span class="text-cyan-400 font-semibold">Ramiro Soler</span></p>
-      <div class="flex gap-4 mt-2 md:mt-0">
-        <a href="#" class="hover:text-cyan-300 transition-colors">Instagram</a>
-        <a href="#" class="hover:text-cyan-300 transition-colors">Twitter</a>
-        <a href="#" class="hover:text-cyan-300 transition-colors">Facebook</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Script -->
-  <script src="script.js"></script>
-</body>
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
 </html>
