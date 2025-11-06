@@ -1,105 +1,434 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paulo Londra | Inicio</title>
-   
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paulo Londra | Inicio</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png" />
 
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Estilos externos -->
-  <link rel="stylesheet" href="./styles.css">
-</head>
+    <!-- Fuente -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="text-gray-800 bg-white">
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- 🔝 NAV -->
-  <header class="bg-[#00b4d8] text-white py-4 shadow-md sticky top-0 z-50 backdrop-blur-sm bg-opacity-90">
-    <nav class="max-w-6xl mx-auto flex justify-between items-center px-6">
-      <h1 class="text-2xl font-bold tracking-wide cursor-pointer transition-transform duration-300 hover:scale-105">
-        PAULO LONDRA
-      </h1>
-      <ul class="flex space-x-6 text-lg">
-        <li><a href="index.html" class="hover:text-cyan-200 transition-colors">Inicio</a></li>
-        <li><a href="discografia.html" class="hover:text-cyan-200 transition-colors">Discografía</a></li>
-        <li><a href="biografia.html" class="hover:text-cyan-200 transition-colors">Biografía</a></li>
-        <li><a href="galeria.html" class="hover:text-cyan-200 transition-colors">Galería</a></li>
-        <li><a href="contacto.html" class="hover:text-cyan-200 transition-colors">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body class="text-gray-800 bg-white">
+    <!-- 🔝 NAV -->
+    <header
+      class="bg-[#00b4d8] text-white py-4 shadow-md sticky top-0 z-50 backdrop-blur-sm bg-opacity-90"
+    >
+      <nav class="max-w-6xl mx-auto flex justify-between items-center px-6">
+        <h1
+          class="text-2xl font-bold tracking-wide cursor-pointer transition-transform duration-300 hover:scale-105"
+        >
+          PAULO LONDRA
+        </h1>
+        <ul class="flex space-x-6 text-lg">
+          <li>
+            <a href="index.html" class="hover:text-cyan-200 transition-colors"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a
+              href="discografia.html"
+              class="hover:text-cyan-200 transition-colors"
+              >Discografía</a
+            >
+          </li>
+          <li>
+            <a
+              href="biografia.html"
+              class="hover:text-cyan-200 transition-colors"
+              >Biografía</a
+            >
+          </li>
+          <li>
+            <a href="galeria.html" class="hover:text-cyan-200 transition-colors"
+              >Galería</a
+            >
+          </li>
+          <li>
+            <a
+              href="contacto.html"
+              class="hover:text-cyan-200 transition-colors"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- 🎵 HERO -->
-  <section class="hero-section text-center py-20 bg-gradient-to-b from-white to-cyan-50">
-    <div class="animate-fadeIn">
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Bienvenido al Mundo de Paulo Londra</h2>
-      <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-6">
-        Conoce más sobre la vida, la música y la historia de uno de los artistas más influyentes del trap y pop argentino.
-      </p>
-      <a href="#musica" class="bg-cyan-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-cyan-600 transition-all">Explorar</a>
-    </div>
-  </section>
-
-  <!-- BIO -->
-  <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
-    <div class="animate-scroll">
-      <img src="./img/paulo.jpg" alt="Paulo Londra" class="rounded-2xl shadow-lg hover-efecto w-full object-cover">
-    </div>
-    <div class="animate-scroll">
-      <h3 class="text-3xl font-semibold mb-3 text-gray-900">Sobre Paulo Londra</h3>
-      <p class="text-gray-600 mb-4 leading-relaxed">
-        Paulo Londra es un artista argentino que revolucionó la escena urbana con su estilo único y letras auténticas. 
-        Desde “Adán y Eva” hasta “Plan A”, ha demostrado una evolución constante en su carrera.
-      </p>
-      <p class="text-gray-600 leading-relaxed">
-        Su regreso marcó una nueva etapa de madurez musical, manteniendo su esencia y conexión con los fans. 
-        Esta página rinde homenaje a su trayectoria, creatividad y legado en la música latina.
-      </p>
-    </div>
-  </section>
-
-  <!-- GALERÍA -->
-  <section class="max-w-6xl mx-auto px-6 py-20">
-    <h3 class="text-3xl font-semibold text-center mb-10 text-gray-900">📸 Galería</h3>
-    <div class="grid md:grid-cols-3 gap-6">
-      <img src="./img/coriderra2025.avif" alt="Concierto Paulo Londra"
-           class="w-full h-64 rounded-xl shadow-md hover-efecto object-cover">
-      <img src="./img/bizarrp.webp" alt="Grabando en estudio"
-           class="w-full h-64 rounded-xl shadow-md hover-efecto object-cover">
-      <img src="./img/maribecerra.avif" alt="Show en vivo"
-           class="w-full h-64 rounded-xl shadow-md hover-efecto object-cover">
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-200 py-8 text-center text-sm">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="font-medium text-gray-100">© 2025 Fanpage de <span class="font-bold text-cyan-400">Paulo Londra</span></p>
-      <p class="text-gray-300">Desarrollado por <span class="text-cyan-400 font-semibold">Ramiro Soler</span></p>
-      <div class="flex gap-6 mt-3 md:mt-0">
-        <a href="https://instagram.com" target="_blank" class="flex items-center gap-1 hover:text-cyan-300 transition-colors">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://twitter.com" target="_blank" class="flex items-center gap-1 hover:text-cyan-300 transition-colors">
-          <i class="fab fa-twitter"></i> Twitter
-        </a>
-        <a href="https://facebook.com" target="_blank" class="flex items-center gap-1 hover:text-cyan-300 transition-colors">
-          <i class="fab fa-facebook"></i> Facebook
-        </a>
+    <!-- 🎵 HERO -->
+    <section
+      class="hero-section text-center py-20 bg-gradient-to-b from-white to-cyan-50"
+    >
+      <div class="animate-fadeIn">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Bienvenido al Mundo de Paulo Londra
+        </h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-6">
+          Conoce más sobre la vida, la música y la historia de uno de los
+          artistas más influyentes del trap y pop argentino.
+        </p>
+        <a
+          href="#musica"
+          class="bg-cyan-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-cyan-600 transition-all"
+          >Explorar</a
+        >
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Scripts -->
-  <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
-  <script src="./script.js"></script>
-</body>
+    <!-- BIO -->
+    <section
+      class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center"
+    >
+      <div class="animate-scroll">
+        <img
+          src="./img/paulo.jpg"
+          alt="Paulo Londra"
+          class="rounded-2xl shadow-lg hover-efecto w-full object-cover"
+        />
+      </div>
+      <div class="animate-scroll">
+        <h3 class="text-3xl font-semibold mb-3 text-gray-900">
+          Sobre Paulo Londra
+        </h3>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          Paulo Londra es un artista argentino que revolucionó la escena urbana
+          con su estilo único y letras auténticas. Desde “Adán y Eva” hasta
+          “Plan A”, ha demostrado una evolución constante en su carrera.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Su regreso marcó una nueva etapa de madurez musical, manteniendo su
+          esencia y conexión con los fans. Esta página rinde homenaje a su
+          trayectoria, creatividad y legado en la música latina.
+        </p>
+      </div>
+    </section>
+
+    <!-- MUSICA -->
+    <section id="musica" class="bg-cyan-50 py-16">
+      <div class="max-w-6xl mx-auto text-center px-6">
+        <h3 class="text-3xl font-semibold mb-6 text-gray-900">
+          Escucha su música
+        </h3>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Disfruta una selección de sus mejores temas directamente desde
+          Spotify.
+        </p>
+
+        <div
+          class="max-w-xl mx-auto rounded-xl overflow-hidden shadow-md hover-efecto"
+        >
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/4Vwf3yLFT0nG0fLUtSTJ3V?utm_source=generator&theme=0"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 💬 FRASES -->
+    <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+      <h3 class="text-3xl font-semibold mb-6 text-gray-900">
+        Frases que inspiran
+      </h3>
+      <div class="space-y-4">
+        <p class="text-gray-600 italic max-w-2xl mx-auto">
+          "El talento te da la oportunidad, pero la disciplina te mantiene en el
+          juego."
+        </p>
+        <p class="text-gray-600 italic max-w-2xl mx-auto">
+          "No hay sueños imposibles, solo mentes que se rinden antes de
+          intentarlo."
+        </p>
+        <p class="text-gray-600 italic max-w-2xl mx-auto">
+          "El éxito no se busca, se trabaja todos los días con pasión y
+          constancia."
+        </p>
+        <p class="text-gray-600 italic max-w-2xl mx-auto">
+          "La música es la forma más pura de expresar lo que no se puede decir
+          con palabras."
+        </p>
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videoclips" class="bg-cyan-50 py-16 animate-fadeIn">
+      <div class="max-w-6xl mx-auto text-center px-6">
+        <h3
+          class="text-3xl font-bold mb-8 text-gray-900 tracking-tight hover:scale-105 transition-transform duration-500"
+        >
+          Videoclips Destacados
+        </h3>
+        <p class="text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+          Los temas que marcaron un antes y un después en la carrera de
+          <span class="font-semibold text-cyan-700">Paulo Londra</span>. Aquí te
+          dejamos algunos de sus videoclips más representativos.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Primer video -->
+          <div
+            class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 hover:shadow-cyan-200 transition-all duration-700 bg-white"
+          >
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/aWAf5N-IKqQ?si=z4FRtYMn3H4B0KH_"
+              title="Paulo Londra - Primer Canción"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="p-4">
+              <h4 class="text-lg font-semibold text-gray-800">
+                Primer Canción
+              </h4>
+              <p class="text-sm text-gray-600 mt-2">
+                Un tema que definió el inicio del fenómeno Londra, con su estilo
+                único y flow inconfundible.
+              </p>
+            </div>
+          </div>
+
+          <!-- Segundo video -->
+          <div
+            class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 hover:shadow-cyan-200 transition-all duration-700 bg-white"
+          >
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/aWAf5N-IKqQ?si=z4FRtYMn3H4B0KH_"
+              title="Paulo Londra - Segunda Canción"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="p-4">
+              <h4 class="text-lg font-semibold text-gray-800">
+                Segunda Canción
+              </h4>
+              <p class="text-sm text-gray-600 mt-2">
+                Una canción que combina energía y emoción, mostrando el
+                crecimiento del artista.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tercer video -->
+          <div
+            class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 hover:shadow-cyan-200 transition-all duration-700 bg-white"
+          >
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/aWAf5N-IKqQ?si=z4FRtYMn3H4B0KH_"
+              title="Paulo Londra - Tercera Canción"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="p-4">
+              <h4 class="text-lg font-semibold text-gray-800">
+                Tercera Canción
+              </h4>
+              <p class="text-sm text-gray-600 mt-2">
+                Una obra musical que refleja el talento y autenticidad de Paulo
+                Londra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎤 DATOS CURIOSOS -->
+    <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-8 text-gray-900">
+        🎤 Datos curiosos
+      </h3>
+      <ul class="space-y-4 text-gray-700 max-w-2xl mx-auto">
+        <li>
+          Paulo comenzó grabando freestyle con sus amigos en plazas públicas de
+          Córdoba, Argentina.
+        </li>
+        <li>Antes de dedicarse a la música, estudió derecho por un tiempo.</li>
+        <li>
+          Su canción “Adán y Eva” fue número 1 en varios países de
+          Latinoamérica.
+        </li>
+        <li>
+          Es fanático de los videojuegos, especialmente FIFA y Call of Duty.
+        </li>
+      </ul>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <h3 class="text-3xl font-semibold text-center mb-10 text-gray-900">
+        📸 Galería
+      </h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <img
+          src="./img/coriderra2025.avif"
+          alt="Concierto Paulo Londra"
+          class="w-full h-64 rounded-xl shadow-md hover-efecto object-cover"
+        />
+        <img
+          src="./img/bizarrp.webp"
+          alt="Grabando en estudio"
+          class="w-full h-64 rounded-xl shadow-md hover-efecto object-cover"
+        />
+        <img
+          src="./img/maribecerra.avif"
+          alt="Show en vivo"
+          class="w-full h-64 rounded-xl shadow-md hover-efecto object-cover"
+        />
+      </div>
+    </section>
+
+    <!--  FAN DEL MES -->
+    <section class="bg-cyan-50 py-16 text-center">
+      <h3 class="text-3xl font-semibold mb-10 text-gray-900">✨ Fan del mes</h3>
+
+      <div
+        class="max-w-md mx-auto bg-white rounded-3xl shadow-lg p-6 hover:shadow-cyan-200 transition-shadow duration-500 flex items-center gap-6"
+      >
+        <!-- Avatar aleatorio -->
+        <div class="flex-shrink-0">
+          <img
+            src="https://i.pravatar.cc/100?img=5"
+            alt="Fan del mes"
+            class="w-24 h-24 rounded-full border-4 border-cyan-200 shadow-lg hover:scale-110 transition-transform duration-300"
+          />
+        </div>
+
+        <!-- Info del fan -->
+        <div class="text-left">
+          <p class="font-bold text-[#0077b6] text-xl">ALDANA DAYAN</p>
+          <p class="text-gray-600 text-sm mt-1">Nivel de fan: Súper Fan</p>
+          <p class="text-gray-400 text-xs mt-1">
+            Última interacción: <span class="font-light">05/11/2025</span>
+          </p>
+          <p class="text-gray-700 mt-3 italic">
+            “Paulo me inspira a seguir mis sueños y nunca dejar de ser yo mismo.
+            Su música me acompaña todos los días.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🚀 NOTICIAS -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <h3 class="text-3xl font-semibold text-center mb-10 text-gray-900">
+        🚀 Noticias recientes
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-md p-6 hover-efecto">
+          <h4 class="text-lg font-semibold text-[#00b4d8] mb-2">
+            Nuevo sencillo en camino
+          </h4>
+          <p class="text-gray-600 text-sm">
+            Paulo anunció que está preparando un nuevo tema que mezcla rock y
+            trap. ¡Lanzamiento pronto!
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 hover-efecto">
+          <h4 class="text-lg font-semibold text-[#00b4d8] mb-2">
+            Colaboración sorpresa
+          </h4>
+          <p class="text-gray-600 text-sm">
+            Se rumorea una colaboración con un artista internacional. Los fans
+            ya están especulando en redes.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 hover-efecto">
+          <h4 class="text-lg font-semibold text-[#00b4d8] mb-2">
+            Gira 2025 confirmada
+          </h4>
+          <p class="text-gray-600 text-sm">
+            Londra confirmó su gira mundial con fechas en Latinoamérica y
+            Europa. ¡El león vuelve rugiendo!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CON REDES SOCIALES -->
+    <footer class="bg-gray-900 text-gray-200 py-8 text-center text-sm">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <!-- Información principal -->
+        <p class="font-medium text-gray-100">
+          © 2025 Fanpage de
+          <span class="font-bold text-cyan-400">Paulo Londra</span>
+        </p>
+
+        <!-- Desarrollador -->
+        <p class="text-gray-300">
+          Desarrollado por
+          <span class="text-cyan-400 font-semibold">Ramiro Soler</span>
+        </p>
+
+        <!-- Redes sociales con iconos -->
+        <div class="flex gap-6 mt-3 md:mt-0">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="flex items-center gap-1 hover:text-cyan-300 transition-colors"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="flex items-center gap-1 hover:text-cyan-300 transition-colors"
+          >
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="flex items-center gap-1 hover:text-cyan-300 transition-colors"
+          >
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FONT AWESOME (para los iconos) -->
+    <script
+      src="https://kit.fontawesome.com/a81368914c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
